@@ -1,45 +1,51 @@
-# electron-quick-start
+# Icogen Quick Start
 
-**Clone and run for a quick way to see Electron in action.**
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+Ceci est un petit projet basé sur Electron ([Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start)) créé dans le but de répondre à la problématique suivante : être noté sur le cours d'Eletron.
 
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
+Les principaux fichiers sont :
 
-A basic Electron application needs just these files:
+- `package.json` - liste des dépendances nécessaires.
+- `main.js` - Fichier de lancement de l'application
+- `index.html` - Page de rendu HTML
+- `preload.js` - Fichier contenant la plus grande partie des fonctionnalités
+- `public/js/script.js` - Les quelques autres fonctionnalités
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
 
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
 
-## To Use
+## Thème
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+Faire une application avec ElectronJS permettant de générer des icones à partir d'une image présente sur votre disque.
+
+## Comment ça marche ?
+
+Pour cloner et utilisé Icogen, il vous faudra [Git](https://git-scm.com) et [Node.js](https://nodejs.org/en/download/) sur votre ordinateur, ainsi qu'[npm](http://npmjs.com) (qui devrait être compris dans Node.js).
+
+Depuis votre ligne de commande, faites :
 
 ```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
+# Cloner le repo
+git clone https://github.com/Leamundis/icogen.git
+# Direction le dossier
+cd icogen
+# Installation des dépendances
 npm install
-# Run the app
+# Lancer l'application
 npm start
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+Note : si vous utilisez Windows...Dommage pour vous!
 
-## Resources for Learning Electron
 
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
+## Ce qui fonctionne...
+Presque à peu près tout, je crois...Dans la forme du moins...
+
+
+## Ce qui marche...moins bien...
+Voulant créer des icônes, l'application fonctionne mieux avec des images carré.
+Je n'ai pas eu le temps de rectifier un petit problème : lorsqu'on rogne une image, les parties rogner apparaitront en noir dans l'icone!
+
 
 ## License
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+[WTFPL 2.0](LICENSE.md)

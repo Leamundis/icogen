@@ -7,6 +7,10 @@ h3, p, i {
     color: grey;
 }
 
+body {
+    background-image: URL('../img/giftly.png');
+}
+
 .flex {
     display: flex;
 }
@@ -21,20 +25,21 @@ main {
 
 #render {
     width: 75%;
-    background-color: lightgray;
 }
 
 #options {
     width: 25%;
+    background-color: #dcdcdc8a;
 }
 
 #img-render {
-    height: 128px;
-    width: 128px;
+    height: 256px;
+    width: 256px;
 }
 
 .it-img {
     height: 160px;
+    margin-bottom: 30px;
 }
 
 .left-render {
@@ -50,16 +55,27 @@ main {
 }
 
 #options>div {
-    height: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
+#upload, #dimensions, #angles {
+    height: 25%;
+}
+
+#background {
+    height: 10%;
+}
+
+#submit {
+    height: 15%;
+}
+
 #submit button {
-    height: 40px;
-    width: 80px;
+    height: 50px;
+    width: 130px;
     background-color: white;
     color: darkcyan;
     border-radius: 25px;
@@ -71,11 +87,14 @@ main {
     border: 1px solid darkcyan;
 }
 
+
 #dimensions form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 60%;
+    justify-content: space-around;
 }
 
 #dimensions input {

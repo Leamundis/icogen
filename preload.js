@@ -6,8 +6,8 @@ var htmlToImage = require('html-to-image');
 
 const run = () => {
     document.getElementById('pixel').oninput = () => {
-        let imgWidth = Math.pow(2, pixel.value) + 'px';
-        let imgHeight = Math.pow(2, pixel.value) + 'px'
+        let imgWidth = Math.round(Math.pow(2, pixel.value/10)) + 'px';
+        let imgHeight = Math.round(Math.pow(2, pixel.value/10)) + 'px';
         document.getElementById('pixelHeight').value = imgWidth;
         document.getElementById('pixelWidth').value = imgHeight;
         document.getElementById('img-render').style.width = imgWidth;
@@ -41,13 +41,17 @@ const run = () => {
     }
 
     document.getElementById('goToUnicornParadise').onclick = () => {
-        htmlToImage.toJpeg(document.getElementById('not-a-unicorn-image'), { quality: 0.95 })
-        .then(function (dataUrl) {
-            var link = document.createElement('a');
-            link.download = 'my-image-name.jpeg';
-            link.href = dataUrl;
-            link.click();
-        });
+        if (document.getElementById('not-a-unicorn-image')) {
+            htmlToImage.toJpeg(document.getElementById('not-a-unicorn-image'), { quality: 0.95 })
+            .then(function (dataUrl) {
+                var link = document.createElement('a');
+                link.download = 'bestIconEver.jpeg';
+                link.href = dataUrl;
+                link.click();
+            });
+        } else {
+            console.log('Salut Baptiste! Ouai, non, tu ne peux pas uploader une non-image, mais bien essayé!')
+        }
     }
 }
 
