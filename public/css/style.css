@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+h3, p, i {
+    color: grey;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    height: 100vh;
+}
+
+.max-height {
+    height: 100%;
+}
+
+#render {
+    width: 75%;
+    background-color: lightgray;
+}
+
+#options {
+    width: 25%;
+}
+
+#img-render {
+    height: 128px;
+    width: 128px;
+}
+
+.it-img {
+    height: 160px;
+}
+
+.left-render {
+    width: 25%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.right-render {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#options>div {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit button {
+    height: 40px;
+    width: 80px;
+    background-color: white;
+    color: darkcyan;
+    border-radius: 25px;
+}
+
+#submit button:hover {
+    background-color: darkcyan;
+    color: white;
+    border: 1px solid darkcyan;
+}
+
+#dimensions form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dimensions input {
+    width: 60%;
+}
+
+#dimensions output {
+    padding: 4px;
+    border: 2px grey solid;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+#dimensions form>div {
+    width: 100%;
+    flex-direction: row;
+}
+
+.pixel-input {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.pixel-result {
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+#sendUnicorn {
+    cursor: pointer;
+}
+
+#angles>div {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#angles i:hover {
+    cursor: pointer;
+}
+
+.shape-color {
+    color: #f15322;
+}
+
+.this-is-some-shape {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+
+}
+
+.almost-square {
+    border-radius: 30%;
+}
+
+.really-not-square {
+    border-radius: 100%;
+}

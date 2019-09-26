@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/afca234fe8.js" crossorigin="anonymous"></script>
+    <title>Icongen</title>
+</head>
+<body>
+    <main class="flex">
+        <div id="render" class="max-height flex">
+            <div class="left-render flex max-height">
+                <img class="it-img" src="./public/img/itakademy.png" alt="">
+            </div>
+            <div class="right-render flex max-height">
+                <div id="img-render"></div>
+            </div>
+        </div>
+        <div id="options" class="max-height">
+            <div id="upload">
+                <h3>Ajouter une image</h3>
+                <i id="sendUnicorn" class="fas fa-file-upload fa-6x"></i>
+            </div>
+            <div id="dimensions">
+                <h3>Dimensions</h3>
+                <form name="pixelChoice">
+                    <input type="range" id="pixel" value="8" min="5" max="9">
+                    <div class="flex pixel-input">
+                        <div class="pixel-result flex">
+                            <h3>H</h3>
+                            <output class="flex" id="pixelHeight">256px</output>
+                        </div>
+                        <div class="pixel-result flex">
+                            <h3>L</h3>
+                            <output class="flex" id="pixelWidth">256px</output>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="angles">
+                <h3>Angles</h3>
+                <div class="flex">
+                    <div class="flex this-is-some-shape">
+                        <i id="square" class="square angle fas fa-square-full fa-3x shape-color" data-shape="square"></i>
+                        <p>Droit</p>
+                    </div>
+                    <div class="flex this-is-some-shape">
+                        <i id="almost-square" class="almost-square angle fas fa-square fa-3x" data-shape="almost-square"></i>
+                        <p>Arrondi</p>
+                    </div>
+                    <div class="flex this-is-some-shape">
+                        <i id="really-not-square" class="really-not-square angle fas fa-circle fa-3x"  data-shape="really-not-square"></i>
+                        <p>Rond</p>
+                    </div>
+                </div>
+            </div>
+            <div id="background">
+                <h3>Fond</h3>
+                <div>
+                    <i class="fas fa-paint-brush"></i>
+                    <input type="color" value="rgba(0, 0, 0, 0,08)" name="" id="color" onchange="changeBackground()">
+                </div>
+            </div>
+            <div id="submit">
+                <button id="goToUnicornParadise">Valider</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./public/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./renderer.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
