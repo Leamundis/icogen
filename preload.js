@@ -42,7 +42,7 @@ const run = () => {
 
     document.getElementById('goToUnicornParadise').onclick = () => {
         if (document.getElementById('not-a-unicorn-image')) {
-            htmlToImage.toJpeg(document.getElementById('not-a-unicorn-image'), { quality: 0.95 })
+            htmlToImage.toPng(document.getElementById('not-a-unicorn-image'), { quality: 0.95 })
             .then(function (dataUrl) {
                 var link = document.createElement('a');
                 link.download = 'bestIconEver.jpeg';
