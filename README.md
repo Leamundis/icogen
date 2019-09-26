@@ -43,7 +43,7 @@ Presque à peu près tout, je crois...Dans la forme du moins...
 
 ## Ce qui marche...moins bien...
 Voulant créer des icônes, l'application fonctionne mieux avec des images carré.
-Je n'ai pas eu le temps de rectifier un petit problème : lorsqu'on rogne une image, les parties rogner apparaitront en noir dans l'icone!
+
 
 
 ## License
